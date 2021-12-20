@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(243, 243, 243);
+    font-family: 'Roboto', sans-serif;
+}
+
+.flex-container {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.flex-container, .nav-links, .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav {
+    height: 85px;
+    background-color: rgb(34, 34, 34);
+    color: rgb(255, 255, 255);
+    margin-bottom: 25px;
+}
+
+.nav-links {
+    width: 50%;
+    list-style-type: none;
+    align-items: center;
+}
+
+.nav-links a {
+    color: rgb(243, 243, 243);
+    text-decoration: none;
+}
+
+.nav-links a.active {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.btn {
+    height: 35px;
+    width: 90px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(23, 162, 184);
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.flex-container.main {
+    align-items: flex-start;
+}
+
+.col-2 {
+    flex: 2;
+    margin-right: 25px;
+}
+
+.col-1 {
+    flex: 1;
+}
+
+.card {
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(153, 153, 153);
+    margin-bottom: 25px;
+    border-radius: 5px;
+    font-size: 20px;
+    overflow: hidden;
+}
+
+
+.card-header {
+    padding: 25px;
+    background-color: rgb(34, 34, 34);
+    color: rgb(243, 243, 243);
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+}
+
+.card-body {
+    padding: 25px;
+}
+
+.card-body h1, 
+.card-body h2,
+.card-body h3,
+.card-body p {
+    margin: 25px 0px;
+}
+
+.user-card .card-header {
+    background-color: rgb(23, 162, 184);
+    height: 90px;
+    margin-bottom: 70px;
+    display: block;
+}
+
+.card-footer {
+    border-top: 2px solid rgb(153, 153, 153);
+    display: flex;
+    align-items: center;
+    padding: 25px;
+}
+
+.avatar-m {
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    height: 200px;
+    padding: 5px;
+}
+
+.icon-s {
+    height: 25px;
+}
+
+a {
+    color: rgb(58, 129, 230);
+}
+
+.dates {
+    color: rgb(119, 119, 119);
+}
+
+.card-list {
+    padding: 0 25px;
+    padding-top: 25px;
+    list-style-type: none;
+}
+
+.card-list-item, 
+.card-list-item > * {
+    display: flex;
+    align-items: center;
+}
+
+.card-list-item {
+    margin-bottom: 25px;
+    justify-content: space-between;
+}
+
+.card-list-item.start {
+    justify-content: flex-start;
+}
+
+.avatar, #icon{
+    height: 55px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+#icon{
+    height: 35px;
+}
+
+.icon, .btn {
+    cursor: pointer;
+}
+
+.icon:last-child {
+    margin-right: 0;
+}
+
+.badge {
+    font-size: 16px;
+    height: 25px;
+    line-height: 25px;
+    padding: 0 10px;
+    background-color: rgb(153, 153, 153);
+    border-radius: 12px;
+    margin-right: 10px;
+}
